@@ -28,7 +28,7 @@ const ProductCard = ({ display, product }) => {
       } ${darkTheme ? classes["dark"] : ""}`}
     >
       <div>
-        <a href="#">
+        <a href="/#">
           <img src={product.img} alt={product.name} />
         </a>
       </div>
@@ -40,7 +40,7 @@ const ProductCard = ({ display, product }) => {
           )}
         </div>
         <h6 className={classes["product__title"]}>
-          <a href="#">
+          <a href="/#">
             {product.name}
             <small>
               {display !== "grid" && "By "}

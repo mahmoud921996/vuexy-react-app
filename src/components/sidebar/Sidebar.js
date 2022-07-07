@@ -47,7 +47,7 @@ const Sidebar = () => {
       {/* aside-title */}
       <ul className={classes["side__brand"]}>
         <li>
-          <a>
+          <a href="/#">
             <img
               src="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/img/logo.36f34a9f.svg"
               alt="vuexy-brand"
@@ -62,7 +62,9 @@ const Sidebar = () => {
               style={{ color: "#5e50ee", fontSize: "2rem", cursor: "pointer" }}
             />
           ) : (
-            <a href="#"></a>
+            <a href="/#">
+
+            </a>
           )}
         </li>
       </ul>

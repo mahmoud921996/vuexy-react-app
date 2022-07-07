@@ -37,14 +37,14 @@ function App() {
             <h2>Shop</h2>
             <ul>
               <li>
-                <a href="#">
+                <a href="/#">
                   <HomeOutlinedIcon
                     style={{ color: "#5e50ee", fontSize: "2rem" }}
                   />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="/#">
                   <ChevronRightOutlinedIcon
                     style={{
                       fontSize: "2rem",
@@ -54,10 +54,10 @@ function App() {
                 </a>
               </li>
               <li>
-                <a href="#" className={classes["active"]}>ecommerce</a>
+                <a href="/#" className={classes["active"]}>ecommerce</a>
               </li>
               <li>
-                <a href="#">
+                <a href="/#">
                   <ChevronRightOutlinedIcon
                     style={{ fontSize: "2rem",   color: darkTheme ? "#b4b7bd" : "#6e6b7b",}}
                   />

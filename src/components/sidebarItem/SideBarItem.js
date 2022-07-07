@@ -37,7 +37,7 @@ const SideBarItem = props => {
       onClick={() => setShowSubmenu(prevState => !prevState)}
     >
       <a
-        href="#"
+        href="/#"
         className={`side__bar__item__link ${props.active && classes["active"]}`}
       >
         {props.icon}
