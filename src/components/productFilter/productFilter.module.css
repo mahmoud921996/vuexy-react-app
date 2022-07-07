@@ -1,0 +1,221 @@
+.aside__products__filter {
+  min-width: 250px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+
+  left: 240px;
+  top: 0;
+  right: 0;
+  background-color: rgba(34, 41, 47, 0.5);
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.overlay.show {
+  display: block;
+}
+.product__filters__title {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #5e5873;
+}
+
+.product__filters__wrapper {
+  width: 100%;
+  padding: 2.1rem;
+  box-shadow: 0 4px 24px 0 rgba(34, 41, 47, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0s;
+  border-radius: 0.6rem;
+  -webkit-border-radius: 0.6rem;
+  -moz-border-radius: 0.6rem;
+  -ms-border-radius: 0.6rem;
+  -o-border-radius: 0.6rem;
+}
+.product__filters__wrapper.dark
+{
+    background-color: #283046;
+}
+.filter__section li {
+  margin-bottom: 1rem;
+}
+
+.filter__section li label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.product__filters__wrapper.dark label{
+  color: #d0d2d6;
+}
+
+.filter__section li input {
+  display: none;
+}
+
+.filter__section .label__text {
+  padding-left: 0.3rem;
+}
+
+.filter__section li input:checked + .custom__radio {
+  background-color: #7367f0;
+  border: none;
+}
+
+.filter__section .custom__radio {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid #7367f0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.filter__section label {
+  font-size: 1.5rem;
+  color: #5e5873;
+  margin-left: 1rem;
+}
+
+.slider {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  height: 0.2rem;
+  background-color: rgba(115, 103, 240, 0.12);
+  border-radius: 1.5rem;
+}
+
+.progress {
+  position: absolute;
+  height: 0.2rem;
+  left: 0;
+  right: 0;
+  background-color: #7367f0;
+  border-radius: 1.5rem;
+}
+
+.min__value {
+  position: absolute;
+  font-size: 1.4rem;
+  top: -30px;
+  width: 40px;
+  height: 20px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #7367f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.max__value {
+  position: absolute;
+  font-size: 1.4rem;
+  top: -30px;
+  width: 40px;
+  height: 20px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #7367f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.range__inputs {
+  position: relative;
+  width: 100%;
+}
+
+.range__inputs input {
+  position: absolute;
+  width: 100%;
+  top: -5px;
+  height: 5px;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+
+.range__inputs input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0.2rem solid #7367f0;
+  background: #fff;
+  pointer-events: auto;
+}
+.range__inputs input::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0.2rem solid #7367f0;
+  background: #fff;
+  pointer-events: auto;
+}
+
+.rating__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating__row a span
+{
+    font-size: 1.4rem;
+    color: #7367f0;
+    margin-left: 0.2rem;
+}
+.rating__row a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.rating__row > span {
+  font-size: 1.4rem;
+  color: #6e6b7b;
+  font-weight: 400;
+}
+
+/*
+*** media queries
+*/
+@media (max-width: 992px) {
+  .aside__products__filter {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    transform: translateX(-110%);
+    -webkit-transform: translateX(-110%);
+    -moz-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    -o-transform: translateX(-110%);
+    z-index: 2200;
+  }
+}
+
+.aside__products__filter.show {
+  transform: translateX(-30px);
+  overflow-y: scroll;
+  z-index: 2200;
+  -webkit-transform: translateX(-30px);
+  -moz-transform: translateX(-30px);
+  -ms-transform: translateX(-30px);
+  -o-transform: translateX(-30px);
+}
+.aside__products__filter.show > h6 {
+  display: none;
+}
