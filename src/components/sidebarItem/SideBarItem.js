@@ -6,10 +6,10 @@ import classes from "./SideBarItem.module.css";
 
 const SideBarItem = props => {
   const [showSubmenu, setShowSubmenu] = useState(false);
-  const {darkTheme} = useSelector(state => state.theme)
+  const { darkTheme } = useSelector(state => state.theme);
 
   const arrow = props.extendable ? (
-    <span className={classes["arrow__icon"]}></span>
+    <span className={`${classes["arrow__icon"]} ${showSubmenu && classes['rotate']}`}></span>
   ) : null;
   const subMenuItemsCountElement = props.extendable?.count ? (
     <span
@@ -33,7 +33,9 @@ const SideBarItem = props => {
     : null;
   return (
     <li
-      className={`${classes["side__bar__item"]} ${darkTheme ? classes['dark']:''}`}
+      className={`${classes["side__bar__item"]} ${
+        darkTheme ? classes["dark"] : ""
+      }`}
       onClick={() => setShowSubmenu(prevState => !prevState)}
     >
       <a
@@ -42,7 +44,7 @@ const SideBarItem = props => {
       >
         {props.icon}
 
-        <p className={darkTheme ? classes['dark']:''}>{props.content}</p>
+        <p className={darkTheme ? classes["dark"] : ""}>{props.content}</p>
         {statusElement}
         {subMenuItemsCountElement}
         {arrow}

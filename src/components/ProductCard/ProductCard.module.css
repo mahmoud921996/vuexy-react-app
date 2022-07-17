@@ -28,13 +28,15 @@
 .product__card.grid.dark,
 .product__card.list.dark {
   background-color: #283046;
-}.product__card.grid.dark .product__price,
+}
+.product__card.grid.dark .product__price,
 .product__card.list.dark .product__title a,
 .product__card.grid.dark .product__title a,
 .product__card.grid.dark,
 .product__card.list.dark .product__description {
   color: #a6a4b0;
-}.product__card.grid.dark .wishlist,
+}
+.product__card.grid.dark .wishlist,
 .product__card.list.dark .wishlist {
   background-color: #161d31;
   color: #fff;
@@ -60,9 +62,7 @@
 .product__card.list .product__description {
   order: 3;
 }
-.product__card.list .product__card__body {
-  display: flex;
-}
+
 
 .product__card.list img {
   width: 100%;
@@ -151,8 +151,6 @@ a:link {
 }
 
 .product__card.grid .product__buttons {
-  /* width: 100%;
-    margin-top: auto; */
   width: 100%;
   margin-top: auto;
 }

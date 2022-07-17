@@ -213,7 +213,7 @@ const ProductFilter = ({ products }) => {
           <FilterTitle>Rating</FilterTitle>
           <ul className={classes["filter__section"]}>
             <li className={classes["rating__row"]}>
-              <a>
+              <a href="/#">
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
@@ -226,7 +226,7 @@ const ProductFilter = ({ products }) => {
               <span>160</span>
             </li>
             <li className={classes["rating__row"]}>
-              <a>
+              <a href="/#">
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
@@ -241,7 +241,7 @@ const ProductFilter = ({ products }) => {
               <span>176</span>
             </li>
             <li className={classes["rating__row"]}>
-              <a>
+              <a href="/#">
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
                 <StarOutlineIcon
@@ -258,7 +258,7 @@ const ProductFilter = ({ products }) => {
               <span>291</span>
             </li>
             <li className={classes["rating__row"]}>
-              <a>
+              <a href='/#'>
                 <StarIcon style={{ color: "#ff9f43", fontSize: "2rem" }} />
                 <StarOutlineIcon
                   style={{ color: "#b9b9c3", fontSize: "2rem" }}

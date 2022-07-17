@@ -154,7 +154,7 @@
   .nav__admin__text {
     display: none;
   }
-  .nav__admin__lang a{
+  .nav__admin__lang a {
     display: flex;
     align-items: center;
   }

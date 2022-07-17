@@ -77,7 +77,7 @@ function App() {
               windowWidth={windowWidth}
               resultsCount={products.length}
             />
-            <ProductGrid products={products} displayProducts="list" />
+            <ProductGrid products={products}  />
           </section>
         </section>
       </main>

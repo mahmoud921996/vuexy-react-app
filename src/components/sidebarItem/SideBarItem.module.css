@@ -21,11 +21,11 @@
   -moz-transform: translateX(5px);
   -ms-transform: translateX(5px);
   -o-transform: translateX(5px);
-  transition: transform 0.25s ease;
-  -webkit-transition: transform 0.25s ease;
-  -moz-transition: transform 0.25s ease;
-  -ms-transition: transform 0.25s ease;
-  -o-transition: transform 0.25s ease;
+  transition: transform 0.35s ease;
+  -webkit-transition: transform 0.35s ease;
+  -moz-transition: transform 0.35s ease;
+  -ms-transition: transform 0.35s ease;
+  -o-transition: transform 0.35s ease;
 }
 
 .arrow__icon {
@@ -109,10 +109,10 @@
 }
 
 
-.side__bar__item div
+/* .side__bar__item div
 {
     margin-right: 1.5rem;
-}
+} */
 .side__bar__item p.dark
 {
     color: #d0d2d6;
